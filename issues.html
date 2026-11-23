@@ -1,64 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="issues.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-        <title>LAB_ACT1 | ISSUES</title>
-    </head>
-    <body class="bg">
-        <nav>
-            <div class="navcontent">
-                <div class="logo"><a href="index2.html">CABARRUBIAS</a></div>
-                
-                <ul>
-                    <li><a href="index2.html">Home</a></li>
-                    <li><a href="OceanConservation.html">Ocean Conservation</a></li>
-                    <li><a href="issues.html">Issues in Scarborough Shoal</a></li>
-                    <li><a href="opinion.html">Opinion</a></li>
-        
-                </ul>
-            </div>
-        </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#082f3d">
+    <link rel="stylesheet" href="issues.css">
+    <title>Scarborough Shoal Issues | Ocean Cares</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="OceanConservation.html" aria-label="Ocean Cares home">
+        <svg class="brand-mark" viewBox="0 0 56 56" aria-hidden="true">
+          <circle cx="28" cy="28" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M11 28c5-5 10-5 15 0s10 5 19 0M11 36c5-5 10-5 15 0s10 5 19 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M28 10c4 5 6 10 6 15a6 6 0 0 1-12 0c0-5 2-10 6-15Z" fill="currentColor"/>
+        </svg>
+        <span><strong>OCEAN</strong> CARES</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="OceanConservation.html">Home</a>
+        <a class="active" href="issues.html">Issues</a>
+        <a href="opinion.html">Opinion</a>
+      </nav>
+    </header>
 
-        <main>
-            <section class="projects">
-                
-                <a  class="project-card">
-                    <img src="communication.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="com">COMMUNICATION</h2>
-        
-                    </div>
-                </a>
+    <main>
+      <section class="page-hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Maritime awareness</span>
+          <h1>Scarborough Shoal:<br><em>Ocean, territory, responsibility.</em></h1>
+          <p>Understand the environmental, legal, and humanitarian issues surrounding the shoal and why peaceful cooperation matters.</p>
+        </div>
+        <a class="jump-link" href="#issues">
+          Explore the issues
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
 
-                <a  class="project-card">
-                    <img src="territory.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="territory">TERRITORY</h2>
-                    
-                    </div>
-                </a>
-        
-                <a class="project-card">
-                    <img src="pride.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="lower">DECREASE</h2>
-                        
-                    </div>
-                </a>
-        
-                <a class="project-card">
-                    <img src="greed.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="reduce">CONTROL</h2>
-                        
-                    </div>
-                </a>
-            </section>
-        </main>
-        <footer>@noCopyright</footer>
-    </body>
-    </html>
+      <section class="issue-intro" id="issues">
+        <div>
+          <span class="section-kicker">What is at stake</span>
+          <h2>Four pressures affecting one shared ecosystem.</h2>
+        </div>
+        <p>Scarborough Shoal supports marine biodiversity and the livelihoods of Filipino fishing communities. Protecting it requires informed dialogue, respect for international law, and responsible stewardship.</p>
+      </section>
+
+      <section class="issue-grid" aria-label="Scarborough Shoal issues">
+        <article class="issue-card">
+          <img src="communication.jpg" alt="Communication and cooperation">
+          <div class="issue-overlay"></div>
+          <span class="issue-number">01</span>
+          <div class="issue-content">
+            <span>Diplomacy</span>
+            <h2>Communication</h2>
+            <p>Open dialogue can prevent escalation and help neighboring nations protect shared waters.</p>
+            <button type="button" data-detail="communication">View concern <b>↗</b></button>
+          </div>
+        </article>
+
+        <article class="issue-card">
+          <img src="territory.jpg" alt="Territorial boundaries">
+          <div class="issue-overlay"></div>
+          <span class="issue-number">02</span>
+          <div class="issue-content">
+            <span>Sovereignty</span>
+            <h2>Territory</h2>
+            <p>Disputed claims affect access, fishing rights, navigation, and the rule of law.</p>
+            <button type="button" data-detail="territory">View concern <b>↗</b></button>
+          </div>
+        </article>
+
+        <article class="issue-card">
+          <img src="pride.jpg" alt="Regional pride and public opinion">
+          <div class="issue-overlay"></div>
+          <span class="issue-number">03</span>
+          <div class="issue-content">
+            <span>Public attitude</span>
+            <h2>Pride</h2>
+            <p>National pride can strengthen unity, but extremism may deepen tension and misinformation.</p>
+            <button type="button" data-detail="pride">View concern <b>↗</b></button>
+          </div>
+        </article>
+
+        <article class="issue-card">
+          <img src="greed.jpg" alt="Competing economic interests">
+          <div class="issue-overlay"></div>
+          <span class="issue-number">04</span>
+          <div class="issue-content">
+            <span>Resource pressure</span>
+            <h2>Greed</h2>
+            <p>Overextraction and exclusive control can damage marine habitats and local livelihoods.</p>
+            <button type="button" data-detail="greed">View concern <b>↗</b></button>
+          </div>
+        </article>
+      </section>
+
+      <section class="issue-detail" aria-live="polite">
+        <span class="section-kicker">Selected concern</span>
+        <h2 id="detail-title">Communication</h2>
+        <p id="detail-copy">Coordinated diplomatic communication helps governments resolve disputes peacefully and keep essential maritime channels open.</p>
+        <a class="action-link" href="opinion.html">Read our position <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer-brand" href="OceanConservation.html"><strong>OCEAN</strong> CARES</a>
+      <div>
+        <a href="OceanConservation.html">Home</a>
+        <a href="opinion.html">Opinion</a>
+      </div>
+    </footer>
+
+    <script>
+      const details = {
+        communication: ["Communication", "Coordinated diplomatic communication helps governments resolve disputes peacefully and keep essential maritime channels open."],
+        territory: ["Territory", "Territorial and maritime rights should be addressed through peaceful, lawful processes that respect communities and the marine environment."],
+        pride: ["Pride", "National solidarity is important, but informed and respectful civic discussion helps prevent hate, rumor, and unnecessary conflict."],
+        greed: ["Greed", "Fair, science-based resource management protects both fish populations and the livelihoods of present and future coastal communities."]
+      };
+
+      document.querySelectorAll('[data-detail]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const [title, copy] = details[button.dataset.detail];
+          document.querySelector('#detail-title').textContent = title;
+          document.querySelector('#detail-copy').textContent = copy;
+          document.querySelector('.issue-detail').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      });
+    </script>
+  </body>
+</html>

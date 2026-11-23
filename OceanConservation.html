@@ -1,64 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="OceanConservation.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-        <title>LAB_ACT1 | OCEANCONSERVATION</title>
-    </head>
-    <body class="bg">
-        <nav>
-            <div class="navcontent">
-                <div class="logo"><a href="index2.html">CABARRUBIAS</a></div>
-                
-                <ul>
-                    <li><a href="index2.html">Home</a></li>
-                    <li><a href="OceanConservation.html">Ocean Conservation</a></li>
-                    <li><a href="issues.html">Issues in Scarborough Shoal</a></li>
-                    <li><a href="opinion.html">Opinion</a></li>
-                </ul>
-            </div>
-        </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#082f3d">
+    <link rel="stylesheet" href="OceanConservation.css">
+    <title>Ocean Conservation | Merco Cabarrubias</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to portfolio">
+        <svg class="brand-mark" viewBox="0 0 56 56" aria-hidden="true">
+          <circle cx="28" cy="28" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M11 28c5-5 10-5 15 0s10 5 19 0M11 36c5-5 10-5 15 0s10 5 19 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M28 10c4 5 6 10 6 15a6 6 0 0 1-12 0c0-5 2-10 6-15Z" fill="currentColor"/>
+        </svg>
+        <span><strong>OCEAN</strong> CARES</span>
+      </a>
 
-        <main>
-            <section class="projects">
-                
-                <a  class="project-card">
-                    <img src="infinite.jpeg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="recycle">RECYCLE</h2>
-        
-                    </div>
-                </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-                <a  class="project-card">
-                    <img src="beach.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="clean">CLEANLINESS</h2>
-                    
-                    </div>
-                </a>
-        
-                <a class="project-card">
-                    <img src="energy.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="energy">ENERGY</h2>
-                        
-                    </div>
-                </a>
-        
-                <a class="project-card">
-                    <img src="ocean.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h2 class="avoid">AVOID</h2>
-                        
-                    </div>
-                </a>
-            
-            </section>
-        </main>
-        <footer>@noCopyright</footer>
-    </body>
-    </html>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="OceanConservation.html">Home</a>
+        <a href="#mission">About Us</a>
+        <a href="issues.html">Issues</a>
+        <a href="opinion.html">Opinion</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <video class="hero-media" autoplay muted loop playsinline poster="beach.jpg">
+          <source src="ocean.mp4" type="video/mp4">
+        </video>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <span class="eyebrow"><span></span> Ocean conservation initiative</span>
+          <h1 id="hero-title">The ocean is life.<br><em>Protect it.</em></h1>
+          <p>Every wave connects us. Protect marine ecosystems through practical choices that safeguard life below the surface.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#conservation">Explore our mission <span aria-hidden="true">→</span></a>
+            <a class="text-button" href="#mission">Learn more <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <aside class="impact-card" aria-label="Ocean conservation facts">
+          <div>
+            <strong>71%</strong>
+            <span>of Earth's surface is covered by ocean</span>
+          </div>
+          <div>
+            <strong>8M</strong>
+            <span>tonnes of plastic enter oceans yearly</span>
+          </div>
+        </aside>
+
+        <a class="scroll-cue" href="#mission" aria-label="Scroll to our mission">
+          <span>Discover</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="mission" id="mission" aria-labelledby="mission-title">
+        <div class="mission-heading reveal">
+          <span class="section-kicker">Our mission</span>
+          <h2 id="mission-title">Small actions.<br><em>Lasting impact.</em></h2>
+        </div>
+        <p class="mission-copy reveal">Healthy oceans sustain biodiversity, regulate climate, and support coastal communities. Conservation begins with awareness and grows through everyday action.</p>
+      </section>
+
+      <section class="conservation-grid" id="conservation" aria-label="Ocean conservation pillars">
+        <article class="conservation-card reveal">
+          <img src="infinite.jpeg" alt="Infinity recycling symbol">
+          <div class="card-overlay"></div>
+          <div class="card-number">01</div>
+          <div class="card-content">
+            <span>Waste reduction</span>
+            <h2>Recycle</h2>
+            <p>Keep plastic and reusable materials out of our seas.</p>
+            <a href="#take-action" aria-label="Take a recycling action">Take action <b>↗</b></a>
+          </div>
+        </article>
+
+        <article class="conservation-card reveal">
+          <img src="beach.jpg" alt="Clean ocean shoreline">
+          <div class="card-overlay"></div>
+          <div class="card-number">02</div>
+          <div class="card-content">
+            <span>Community action</span>
+            <h2>Cleanliness</h2>
+            <p>Protect coastlines and waterways from pollution.</p>
+            <a href="#take-action" aria-label="Take a cleanliness action">Take action <b>↗</b></a>
+          </div>
+        </article>
+
+        <article class="conservation-card reveal">
+          <img src="energy.jpg" alt="Sustainable clean energy">
+          <div class="card-overlay"></div>
+          <div class="card-number">03</div>
+          <div class="card-content">
+            <span>Lower emissions</span>
+            <h2>Clean Energy</h2>
+            <p>Choose efficient habits and renewable solutions.</p>
+            <a href="#take-action" aria-label="Take a clean energy action">Take action <b>↗</b></a>
+          </div>
+        </article>
+
+        <article class="conservation-card reveal">
+          <img src="ocean.jpg" alt="Healthy blue ocean">
+          <div class="card-overlay"></div>
+          <div class="card-number">04</div>
+          <div class="card-content">
+            <span>Wildlife protection</span>
+            <h2>Avoid Harm</h2>
+            <p>Respect habitats and prevent further ecosystem damage.</p>
+            <a href="#take-action" aria-label="Take a wildlife protection action">Take action <b>↗</b></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="take-action reveal" id="take-action" aria-labelledby="action-title">
+        <div>
+          <span class="section-kicker">Be part of the change</span>
+          <h2 id="action-title">A healthier ocean starts with you.</h2>
+        </div>
+        <button class="primary-button pledge-button" type="button">Make a pledge <span aria-hidden="true">→</span></button>
+      </section>
+    </main>
+
+    <dialog class="pledge-dialog" id="pledge-dialog" aria-labelledby="pledge-title">
+      <form method="dialog" class="pledge-form">
+        <button class="dialog-close" type="button" aria-label="Close pledge">×</button>
+        <span class="section-kicker">My ocean pledge</span>
+        <h2 id="pledge-title">Choose actions you can keep.</h2>
+        <p class="pledge-intro">Select at least one commitment. Every small habit helps protect marine life.</p>
+
+        <label class="pledge-option">
+          <input type="checkbox" name="pledge" value="Reuse a container instead of buying single-use plastic">
+          <span class="pledge-check" aria-hidden="true"></span>
+          <span>
+            <strong>Refuse single-use plastic</strong>
+            <small>Bring a refillable bottle or container.</small>
+          </span>
+        </label>
+
+        <label class="pledge-option">
+          <input type="checkbox" name="pledge" value="Join or organize a shoreline or community cleanup">
+          <span class="pledge-check" aria-hidden="true"></span>
+          <span>
+            <strong>Keep a local space clean</strong>
+            <small>Join or organize a shoreline cleanup.</small>
+          </span>
+        </label>
+
+        <label class="pledge-option">
+          <input type="checkbox" name="pledge" value="Save energy and reduce my carbon footprint">
+          <span class="pledge-check" aria-hidden="true"></span>
+          <span>
+            <strong>Lower my carbon impact</strong>
+            <small>Save energy and choose efficient travel.</small>
+          </span>
+        </label>
+
+        <div class="pledge-progress" aria-live="polite">
+          <span><b id="pledge-count">0</b> of 3 commitments selected</span>
+          <div><i id="pledge-progress-bar"></i></div>
+        </div>
+
+        <button class="pledge-submit primary-button" type="button" disabled>Confirm my pledge <span aria-hidden="true">→</span></button>
+        <p class="pledge-result" id="pledge-result" role="status"></p>
+      </form>
+    </dialog>
+
+    <footer>
+      <a class="brand footer-brand" href="OceanConservation.html">
+        <svg class="brand-mark" viewBox="0 0 56 56" aria-hidden="true">
+          <circle cx="28" cy="28" r="26" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M11 28c5-5 10-5 15 0s10 5 19 0M11 36c5-5 10-5 15 0s10 5 19 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M28 10c4 5 6 10 6 15a6 6 0 0 1-12 0c0-5 2-10 6-15Z" fill="currentColor"/>
+        </svg>
+        <span><strong>OCEAN</strong> CARES</span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Portfolio</a>
+        <a href="issues.html">Issues</a>
+        <a href="opinion.html">Opinion</a>
+      </div>
+      <span class="copyright">© 2026 Ocean Conservation</span>
+    </footer>
+
+    <script>
+      const menuButton = document.querySelector('.menu-toggle');
+      const navigation = document.querySelector('.main-nav');
+
+      menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        navigation.classList.toggle('open', !isOpen);
+      });
+
+      document.querySelectorAll('.main-nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menuButton.setAttribute('aria-expanded', 'false');
+          navigation.classList.remove('open');
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+      const pledgeDialog = document.querySelector('#pledge-dialog');
+      const pledgeButton = document.querySelector('.pledge-button');
+      const closePledge = document.querySelector('.dialog-close');
+      const pledgeOptions = [...document.querySelectorAll('.pledge-option input')];
+      const pledgeCount = document.querySelector('#pledge-count');
+      const pledgeProgress = document.querySelector('#pledge-progress-bar');
+      const pledgeSubmit = document.querySelector('.pledge-submit');
+      const pledgeResult = document.querySelector('#pledge-result');
+
+      pledgeButton.addEventListener('click', () => pledgeDialog.showModal());
+      closePledge.addEventListener('click', () => pledgeDialog.close());
+
+      pledgeDialog.addEventListener('click', (event) => {
+        if (event.target === pledgeDialog) pledgeDialog.close();
+      });
+
+      pledgeOptions.forEach((option) => {
+        option.addEventListener('change', () => {
+          const selected = pledgeOptions.filter((item) => item.checked).length;
+          pledgeCount.textContent = String(selected);
+          pledgeProgress.style.width = `${(selected / pledgeOptions.length) * 100}%`;
+          pledgeSubmit.disabled = selected === 0;
+          pledgeResult.textContent = '';
+        });
+      });
+
+      pledgeSubmit.addEventListener('click', () => {
+        const selected = pledgeOptions.filter((item) => item.checked).map((item) => item.value);
+        pledgeResult.textContent = `Pledge confirmed: ${selected.join('; ')}.`;
+        pledgeButton.innerHTML = 'Pledge confirmed <span aria-hidden="true">✓</span>';
+        pledgeButton.classList.add('pledged');
+        localStorage.setItem('oceanCarePledge', JSON.stringify(selected));
+      });
+
+      const savedPledge = JSON.parse(localStorage.getItem('oceanCarePledge') || '[]');
+      if (savedPledge.length) {
+        pledgeOptions.forEach((option) => {
+          option.checked = savedPledge.includes(option.value);
+        });
+        const savedCount = savedPledge.length;
+        pledgeCount.textContent = String(savedCount);
+        pledgeProgress.style.width = `${(savedCount / pledgeOptions.length) * 100}%`;
+        pledgeSubmit.disabled = false;
+        pledgeButton.innerHTML = 'Pledge confirmed <span aria-hidden="true">✓</span>';
+        pledgeButton.classList.add('pledged');
+      }
+    </script>
+  </body>
+</html>
